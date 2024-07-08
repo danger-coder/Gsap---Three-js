@@ -6,13 +6,23 @@ const GsapStagger = () => {
     useGSAP(() => {
 
         gsap.to('#purple-box',{
-            y:250,
+            y:-50,
             repeat: -1,
             stagger:0.1,
             ease:"elastic.out",
             duration:1,
-            yoyo:true
+            // yoyo:true
         })
+
+        gsap.to('#purple-box',{
+            y:-60,
+            repeat: -1,
+            stagger:0.1,
+            ease:"elastic.out",
+            duration:1,
+            // yoyo:true
+        })
+   
    
 
     }, [])
