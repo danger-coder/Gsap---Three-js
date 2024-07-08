@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import GsapTimeline from './pages/GsapTimeline';
+import GsapStagger from './pages/GsapStagger';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <GsapTimeline/>
+    {/* <GsapTimeline/> */}
+    <GsapStagger/>
   </React.StrictMode>
 );
 
