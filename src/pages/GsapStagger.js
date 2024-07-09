@@ -6,22 +6,29 @@ const GsapStagger = () => {
     useGSAP(() => {
 
         gsap.to('#purple-box',{
-            y:-50,
+            y:250,
             repeat: -1,
-            stagger:0.1,
+            // stagger:0.1,
             ease:"elastic.out",
-            duration:1,
-            // yoyo:true
+            duration:2,
+            stagger:{
+                amount:1.5,
+                grid:[2,1],
+                axis:"y",
+                ease:'circ.inOut',
+                from:'center'
+            },
+            yoyo:true
         })
 
-        gsap.to('#purple-box',{
-            y:-60,
-            repeat: -1,
-            stagger:0.1,
-            ease:"elastic.out",
-            duration:1,
-            // yoyo:true
-        })
+        // gsap.to('#purple-box',{
+        //     y:-60,
+        //     repeat: -1,
+        //     stagger:0.1,
+        //     ease:"elastic.out",
+        //     duration:2,
+        //     // yoyo:true
+        // })
    
    
 
