@@ -5,13 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import GsapTimeline from './pages/GsapTimeline';
 import GsapStagger from './pages/GsapStagger';
+import GsapScrollTrigger from './pages/GsapScrollTrigger';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <GsapTimeline/> */}
-    <GsapStagger/>
+    {/* <GsapStagger/> */}
+    <GsapScrollTrigger/>
   </React.StrictMode>
 );
 
